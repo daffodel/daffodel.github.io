@@ -202,14 +202,11 @@ form textarea{
 }
 
 button{
-    width: 100px;
+    width: 566px;
     height: 25px;
-    float: left;
-    margin-left: 119px;
     background-color: #f3ccbd;
     border: none;
     border-radius: 25px;
-
 }
 
 button:hover{

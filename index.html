@@ -76,16 +76,28 @@ oefmpeomcpoefmpodfmc</p>
 
     <!--contact-->
 
+    <!--contact-->
+
 <section id="contact">
     <h3>contact</h3>
     <hr>
-    <form>
-        <input type="email" placeholder="e-mail"><br>
-        <input type="text" placeholder="name"><br>
-        <input type="text" placeholder="betreff"><br>
-        <textarea placeholder="nachricht"></textarea><br>
-        <input type="submit" class="send">
-    </form>
+    <div class="contact-box">
+        <form action="https://formsubmit.co/13dc69df6fa5f248f87e5ae0d5554cf3" method="POST">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="https://daffodel.github.io/index.html#contact">
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="email" name="email" placeholder="e-mail" required><br>
+            <input type="text" name ="name" placeholder="name" required><br>
+            <input type="text" name="_subject" placeholder="subject" required><br>
+            <textarea name="message" placeholder="message" required></textarea><br>
+
+            <input type="submit" id="send">
+
+        </form> 
+        <p id="thankyou" hidden>Thank you! Your E-Mail was sent.</p>
+    </div>
+
 </section>
 
     <!--footer-->
@@ -93,5 +105,14 @@ oefmpeomcpoefmpodfmc</p>
 <footer>
     <p>&copy; 2023 Delia Reho</p>
 </footer>
+<script>
+    document.getElementById("send").addEventListener(
+  "click",
+  () => {
+    document.getElementById("thankyou").hidden = false;
+  },
+  false
+);
+</script>
 </body>
 </html>

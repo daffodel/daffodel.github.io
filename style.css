@@ -177,6 +177,42 @@ form input, textarea{
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
     margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: grey;
+    outline: none;
 }
 
-/* header */
+form input{
+    width: 552px;
+    height: 30px;
+}
+
+form input:first-child{
+    margin-top: 10px;
+}
+form textarea{
+    width: 552px;
+    height: 100px;
+    resize: none;
+}
+
+.input{
+    padding-left: 10px;
+}
+
+button{
+    width: 100px;
+    height: 25px;
+    float: left;
+    margin-left: 119px;
+    background-color: #f3ccbd;
+    border: none;
+    border-radius: 25px;
+
+}
+
+button:hover{
+    background-color: #e4b7a6;
+}
+/* footer */
